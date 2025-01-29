@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		86770B362D3C41C7006E614E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 86770B352D3C41C7006E614E /* FirebaseAuth */; };
+		86770B382D3C41C7006E614E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 86770B372D3C41C7006E614E /* FirebaseFirestore */; };
+		86770B3A2D3C41C7006E614E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 86770B392D3C41C7006E614E /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		86770ADE2D3C2B83006E614E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,12 +35,51 @@
 		86770AE72D3C2B83006E614E /* PaddleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaddleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		86770ACF2D3C2B81006E614E /* PaddleApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PaddleApp;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		86770B112D3C2BED006E614E /* Exceptions for "PaddleApp" folder in "PaddleApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				App/PaddleAppApp.swift,
+				Componets/InputView.swift,
+				Componets/SettingsRowView.swift,
+				Componets/TeamHandling.swift,
+				Core/Authentication/View/CoachRegistrationView.swift,
+				Core/Authentication/View/CreateTeamView.swift,
+				Core/Authentication/View/FeedView.swift,
+				Core/Authentication/View/JoinTeamByIDView.swift,
+				Core/Authentication/View/JoinTeamView.swift,
+				Core/Authentication/View/LoginView.swift,
+				Core/Authentication/View/NavBarView.swift,
+				Core/Authentication/View/RegistrationView.swift,
+				Core/Authentication/ViewModel/AuthViewModel.swift,
+				Core/Profile/ChatView.swift,
+				Core/Profile/DashBoardView.swift,
+				Core/Profile/SettingsView.swift,
+				Core/Root/ContentView.swift,
+				"GoogleService-Info.plist",
+				Model/Assets.xcassets,
+				Model/DragonBoatTeam.swift,
+				Model/User.swift,
+				"Preview Content/Preview Assets.xcassets",
+			);
+			target = 86770ACC2D3C2B81006E614E /* PaddleApp */;
 		};
+		86770B122D3C2BED006E614E /* Exceptions for "PaddleApp" folder in "PaddleAppUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				App/PaddleAppApp.swift,
+				Core/Root/ContentView.swift,
+				"GoogleService-Info.plist",
+				Model/Assets.xcassets,
+				Model/DragonBoatTeam.swift,
+				Model/User.swift,
+				"Preview Content/Preview Assets.xcassets",
+			);
+			target = 86770AE62D3C2B83006E614E /* PaddleAppUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		86770AE02D3C2B83006E614E /* PaddleAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = PaddleAppTests;
@@ -45,6 +90,15 @@
 			path = PaddleAppUITests;
 			sourceTree = "<group>";
 		};
+		86770B0C2D3C2BED006E614E /* PaddleApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				86770B112D3C2BED006E614E /* Exceptions for "PaddleApp" folder in "PaddleApp" target */,
+				86770B122D3C2BED006E614E /* Exceptions for "PaddleApp" folder in "PaddleAppUITests" target */,
+			);
+			path = PaddleApp;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86770B362D3C41C7006E614E /* FirebaseAuth in Frameworks */,
+				86770B382D3C41C7006E614E /* FirebaseFirestore in Frameworks */,
+				86770B3A2D3C41C7006E614E /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +132,7 @@
 		86770AC42D3C2B81006E614E = {
 			isa = PBXGroup;
 			children = (
-				86770ACF2D3C2B81006E614E /* PaddleApp */,
+				86770B0C2D3C2BED006E614E /* PaddleApp */,
 				86770AE02D3C2B83006E614E /* PaddleAppTests */,
 				86770AEA2D3C2B83006E614E /* PaddleAppUITests */,
 				86770ACE2D3C2B81006E614E /* Products */,
@@ -107,11 +164,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				86770ACF2D3C2B81006E614E /* PaddleApp */,
-			);
 			name = PaddleApp;
 			packageProductDependencies = (
+				86770B352D3C41C7006E614E /* FirebaseAuth */,
+				86770B372D3C41C7006E614E /* FirebaseFirestore */,
+				86770B392D3C41C7006E614E /* FirebaseStorage */,
 			);
 			productName = PaddleApp;
 			productReference = 86770ACD2D3C2B81006E614E /* PaddleApp.app */;
@@ -155,6 +212,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				86770AEA2D3C2B83006E614E /* PaddleAppUITests */,
+				86770B0C2D3C2BED006E614E /* PaddleApp */,
 			);
 			name = PaddleAppUITests;
 			packageProductDependencies = (
@@ -195,6 +253,9 @@
 			);
 			mainGroup = 86770AC42D3C2B81006E614E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				86770B342D3C41C7006E614E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 86770ACE2D3C2B81006E614E /* Products */;
 			projectDirPath = "";
@@ -558,6 +619,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86770B342D3C41C7006E614E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86770B352D3C41C7006E614E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86770B342D3C41C7006E614E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		86770B372D3C41C7006E614E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86770B342D3C41C7006E614E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		86770B392D3C41C7006E614E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86770B342D3C41C7006E614E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 86770AC52D3C2B81006E614E /* Project object */;
 }
