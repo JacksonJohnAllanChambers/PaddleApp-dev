@@ -2,7 +2,6 @@
 
 **Developer:** Jackson Chambers  
 **Tech Stack:** SwiftUI | Firebase | iOS Development  
-**Development Period:** January 2025
 
 ## 🚀 Project Overview
 
